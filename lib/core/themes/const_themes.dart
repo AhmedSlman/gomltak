@@ -28,20 +28,20 @@ import '../utils/text_style.dart';
 
 class AppThemes {
   static TextTheme textTheme = TextTheme(
-    headlineMedium: Styles.textStyle32, //34
-    headlineSmall: Styles.textStyle28, //24
-    titleLarge: Styles.textStyle22, //20.0
-    titleMedium: Styles.textStyle18, //16.0======>18
-    titleSmall: Styles.textStyle16, //14.0
-    labelLarge: Styles.textStyle15, //14.0======>15
-    bodyMedium: Styles.textStyle14, //14.0
-    bodySmall: Styles.textStyle12, //12.0
-    labelSmall: Styles.textStyle15, //10.0
+    headlineMedium: Styles.textStyle24, //34
+    headlineSmall: Styles.textStyle22, //24
+    titleLarge: Styles.textStyle16, //20.0
+    titleMedium: Styles.textStyle12, //16.0======>18
+    titleSmall: Styles.textStyle11, //14.0
+    labelLarge: Styles.textStyle10, //14.0======>15
+    bodyMedium: Styles.textStyle9, //14.0
+    bodySmall: Styles.textStyle8, //12.0
+    labelSmall: Styles.textStyle10, //10.0
   );
 
   static InputDecorationTheme inputDecorationTheme = InputDecorationTheme(
     hintStyle:
-        Styles.textStyle15.copyWith(color: AppColors.kDarkSilver, height: 1.47),
+        Styles.textStyle10.copyWith(color: AppColors.kDarkSilver, height: 1.47),
     filled: true,
     fillColor: AppColors.kAntiFlashWhite,
     contentPadding: EdgeInsetsDirectional.only(
@@ -78,7 +78,7 @@ class AppThemes {
   static ElevatedButtonThemeData elevatedButtonTheme = ElevatedButtonThemeData(
     style: ButtonStyle(
       textStyle:
-          MaterialStateProperty.all(Styles.textStyle18.copyWith(height: 5.4)),
+          MaterialStateProperty.all(Styles.textStyle12.copyWith(height: 5.4)),
       alignment: Alignment.center,
       padding:
           MaterialStateProperty.all(EdgeInsets.symmetric(horizontal: 10.h)),
