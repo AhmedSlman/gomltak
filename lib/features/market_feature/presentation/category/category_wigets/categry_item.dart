@@ -40,7 +40,9 @@ Widget itemSubCategry({
                   child: Text(
                     nameCategory.toUpperCase(),
                     style:
-                        context.textTheme.bodyLarge!.copyWith(shadows: const [
+                        context.textTheme.bodyLarge!.copyWith(
+                          fontSize:16,
+                          shadows: const [
                       Shadow(
                         // BottomLeft
                         offset: Offset(-1.5, -1.5),

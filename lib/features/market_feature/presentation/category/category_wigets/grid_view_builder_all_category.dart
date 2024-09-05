@@ -17,7 +17,7 @@ class GridVeiwCategoryItems extends StatelessWidget {
           : HomeCubit.get(context).listAllCategory.length,
       gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
         crossAxisCount: (2),
-        // childAspectRatio: .63,
+         childAspectRatio: .83,
       ),
       itemBuilder: (context, index) {
         return HomeCubit.get(context).listAllCategory.isEmpty

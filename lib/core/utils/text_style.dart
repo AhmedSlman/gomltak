@@ -29,24 +29,24 @@ import 'app_colors.dart';
 
 abstract class Styles {
   static TextStyle textStyle24 = GoogleFonts.poppins(
-    fontSize: 24.sp,
+    fontSize: 26.sp,
     fontWeight: FontWeight.w400,
     color: AppColors.kWhite,
   );
   static TextStyle textStyle22 = GoogleFonts.poppins(
-    fontSize: 22.sp,
+    fontSize: 24.sp,
     fontWeight: FontWeight.w600,
     color: AppColors.kArsenic,
   );
   static TextStyle textStyle16 = GoogleFonts.poppins(
     color: AppColors.kArsenic,
-    fontSize: 16.sp,
+    fontSize: 18.sp,
     fontWeight: FontWeight.w600,
   );
 
   static TextStyle textStyle12 = GoogleFonts.poppins(
     color: AppColors.kWhite,
-    fontSize: 12.sp,
+    fontSize: 14.sp,
     fontWeight: FontWeight.w400,
     height: 1.2,
 
@@ -54,23 +54,23 @@ abstract class Styles {
   );
   static TextStyle textStyle11 = GoogleFonts.poppins(
     color: AppColors.kMaastrichtBlue,
-    fontSize: 11.sp,
+    fontSize: 13.sp,
     fontWeight: FontWeight.w500,
   );
   static TextStyle textStyle10 = GoogleFonts.poppins(
     color: AppColors.kDarkSilver,
-    fontSize: 10.sp,
+    fontSize: 12.sp,
     fontWeight: FontWeight.w400,
   );
 
   static TextStyle textStyle9 = GoogleFonts.poppins(
     color: AppColors.kMaastrichtBlue,
-    fontSize: 9.sp,
+    fontSize: 11.sp,
     fontWeight: FontWeight.w500,
   );
   static TextStyle textStyle8 = GoogleFonts.poppins(
     color: AppColors.kDarkSilver,
-    fontSize: 8.sp,
+    fontSize: 10.sp,
     fontWeight: FontWeight.w400,
   );
 

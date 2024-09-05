@@ -87,6 +87,7 @@ SizedBox prodactItem({
                     maxLines: 1,
                     style: context.textTheme.bodyLarge!.copyWith(
                       color: AppColors.kMaastrichtBlue,
+                      fontSize:16
                     ),
                   ),
                 ),

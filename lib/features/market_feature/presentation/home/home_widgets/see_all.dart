@@ -17,14 +17,17 @@ Widget seeAll({
         Text(
           name.toUpperCase(),
           style: context.textTheme.titleMedium!
-              .copyWith(color: AppColors.kBlack, fontWeight: FontWeight.w100),
+              .copyWith(color: AppColors.kBlack, 
+              fontSize:14,
+              fontWeight: FontWeight.w100),
         ),
         InkWell(
             onTap: onTap,
             child: Text(
               AppString.seeall,
               style: context.textTheme.bodySmall!
-                  .copyWith(color: AppColors.kMetallicSeaweed),
+                  .copyWith(color: AppColors.kMetallicSeaweed,
+                  fontSize:12)
             )),
       ],
     ),

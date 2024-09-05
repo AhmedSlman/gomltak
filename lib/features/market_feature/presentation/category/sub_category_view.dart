@@ -62,7 +62,9 @@ class SubCategoryView extends StatelessWidget {
                               gridDelegate:
                                   const SliverGridDelegateWithFixedCrossAxisCount(
                                 crossAxisCount: (2),
-                                // childAspectRatio: .63,
+                                 mainAxisSpacing: (6),
+                                crossAxisSpacing: (18),
+                                childAspectRatio: .83,
                               ),
                               itemBuilder: (context, index) {
                                 return CategoryCubit.get(context)
@@ -82,8 +84,8 @@ class SubCategoryView extends StatelessWidget {
                                         child: Container(
                                           alignment: Alignment.bottomCenter,
                                           // margin: const EdgeInsets.all(10),
-                                          width: 163.w,
-                                          height: 139.h,
+                                           width: 143.w    ,
+                                          height: 129.h,
                                           decoration: BoxDecoration(
                                             color: AppColors.kArsenic,
                                             border: Border.all(
