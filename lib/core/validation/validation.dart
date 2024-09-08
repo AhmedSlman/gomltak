@@ -5,13 +5,10 @@ class Validators {
     if (value!.isEmpty) {
       return AppString.validatorEnterEmail;
     }
-    if (value != null) {
-      if (value.length > 5 && value.contains('@') && value.endsWith('.com')) {
-        return null;
-      }
-      return AppString.validatorValidEmail;
+    if (value.length > 5 && value.contains('@') && value.endsWith('.com')) {
+      return null;
     }
-    return null;
+    return AppString.validatorValidEmail;
   }
 
   static String? validatePassword(String? value) {

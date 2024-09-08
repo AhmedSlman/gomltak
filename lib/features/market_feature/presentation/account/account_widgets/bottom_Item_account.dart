@@ -4,7 +4,7 @@ import 'package:flutter_svg/flutter_svg.dart';
 import 'package:gomltak/core/utils/app_colors.dart';
 import 'package:gomltak/core/utils/extentions.dart';
 
-InkWell bottomItemAccount({
+InkWell BottomItemAccount({
   required BuildContext context,
   required String imageIcon,
   required String nameBottom,

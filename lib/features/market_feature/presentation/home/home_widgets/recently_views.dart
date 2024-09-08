@@ -120,10 +120,11 @@ class ResentlyWidgets extends StatelessWidget {
                                       mainAxisSize: MainAxisSize.min,
                                       children: [
                                         Text(
-                                          "${cubit.uniqueListlistRecenclyViews[index].title}",
+                                          cubit.uniqueListlistRecenclyViews[index].title!.toUpperCase(),
                                           overflow: TextOverflow.ellipsis,
                                           style: context.textTheme.bodySmall!
                                               .copyWith(
+                                                fontSize: 14,
                                             color: AppColors.kMaastrichtBlue,
                                           ),
                                         ),

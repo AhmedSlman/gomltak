@@ -9,11 +9,11 @@ import 'package:gomltak/core/utils/extentions.dart';
 // ignore: must_be_immutable
 class Counter extends StatelessWidget {
   const Counter({
-    Key? key,
+    super.key,
     required this.itemCount,
     this.onTapMinus,
     this.onTapPlus,
-  }) : super(key: key);
+  });
   final int itemCount;
   final Function()? onTapMinus;
   final Function()? onTapPlus;

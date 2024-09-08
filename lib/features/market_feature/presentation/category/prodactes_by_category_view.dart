@@ -41,7 +41,7 @@ class ProdactesByCategoriesView extends StatelessWidget {
                     },
                   ),
                   Padding(
-                    padding: EdgeInsets.symmetric(horizontal: 27.w),
+                    padding: EdgeInsets.symmetric(horizontal: 20.w),
                     child: Column(
                       children: [
                         24.h.ph,
@@ -57,6 +57,8 @@ class ProdactesByCategoriesView extends StatelessWidget {
                             gridDelegate:
                                 const SliverGridDelegateWithFixedCrossAxisCount(
                               crossAxisCount: (2),
+                              // mainAxisSpacing: 12.w,
+                              crossAxisSpacing: (12),
                               childAspectRatio: .63,
                             ),
                             itemBuilder: (context, index) {
@@ -129,22 +131,27 @@ class ProdactesByCategoriesView extends StatelessWidget {
                                           Align(
                                             alignment: Alignment.bottomCenter,
                                             child: SizedBox(
-                                              width: 160.w,
+                                              width: 180.w,
                                               child: Row(
                                                 mainAxisSize: MainAxisSize.min,
                                                 mainAxisAlignment:
                                                     MainAxisAlignment
                                                         .spaceBetween,
                                                 children: [
-                                                  Text(
-                                                    "${cubit.categoryProdactes[index].title}",
-                                                    overflow:
-                                                        TextOverflow.ellipsis,
-                                                    style: context
-                                                        .textTheme.bodySmall!
-                                                        .copyWith(
-                                                      color: AppColors
-                                                          .kMaastrichtBlue,
+                                                  SizedBox(
+                                                    width: 110.w,
+                                                    child: Text(
+                                                      cubit.categoryProdactes[index].title!.toUpperCase(),
+                                                      overflow:
+                                                          TextOverflow.ellipsis,
+                                                      style: context
+                                                          .textTheme.bodySmall!.copyWith(
+                                                            fontSize: 14.sp,
+                                                          )
+                                                          .copyWith(
+                                                        color: AppColors
+                                                            .kMaastrichtBlue,
+                                                      ),
                                                     ),
                                                   ),
                                                   // 2.h.ph,

@@ -22,7 +22,7 @@ class HomeRepoImpel implements HomeRepo {
         endpoint: 'offers',
         lang: CachHelper.getData('lang').toString(),
       );
-      print(resposn.toString());
+      //print(resposn.toString());
       if (resposn['status'] == 1) {
         return right(OffersModel.fromJson(resposn));
       } else {

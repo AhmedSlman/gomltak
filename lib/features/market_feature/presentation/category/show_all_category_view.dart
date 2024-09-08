@@ -10,9 +10,9 @@ import 'package:gomltak/features/market_feature/presentation/category/category_w
 
 class ShowAllCategoryView extends StatelessWidget {
   const ShowAllCategoryView({
-    Key? key,
+    super.key,
     // required this.categoryName,
-  }) : super(key: key);
+  });
   // final String categoryName;
 
   @override

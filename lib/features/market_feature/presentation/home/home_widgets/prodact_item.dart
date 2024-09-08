@@ -82,7 +82,7 @@ SizedBox prodactItem({
               children: [
                 Expanded(
                   child: Text(
-                    "${prodact.title!.toUpperCase()}",
+                    prodact.title!.toUpperCase(),
                     overflow: TextOverflow.ellipsis,
                     maxLines: 1,
                     style: context.textTheme.bodyLarge!.copyWith(

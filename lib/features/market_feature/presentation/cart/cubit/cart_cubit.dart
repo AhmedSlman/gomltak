@@ -43,7 +43,7 @@ class CartCubit extends Cubit<CartState> {
 
   Future getDetailsCart() async {
     emit(CartLoding());
-    print('aasdasdas');
+   // print('aasdasdas');
 
     listItemsCart.clear();
     cartRepoImpel.getDetailsCart().then((response) {

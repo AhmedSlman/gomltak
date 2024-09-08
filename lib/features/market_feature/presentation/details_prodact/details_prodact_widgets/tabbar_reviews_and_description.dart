@@ -5,7 +5,6 @@ import 'package:gomltak/core/utils/app_string.dart';
 import 'package:gomltak/core/utils/extentions.dart';
 
 import 'descriptiion_details.dart';
-import 'review_details.dart';
 
 class TabBarReviewsAndDescription extends StatefulWidget {
   const TabBarReviewsAndDescription({
@@ -27,7 +26,7 @@ class _TabBarReviewsAndDescriptionState
     super.initState();
 
     tabController = TabController(
-      length: 2,
+      length: 1,
       vsync: this,
       initialIndex: selectedIndex,
     );
@@ -67,24 +66,24 @@ class _TabBarReviewsAndDescriptionState
               Tab(
                 text: AppString.description,
               ),
-              Tab(
-                text: AppString.reviews,
-              ),
+              // Tab(
+              //   text: AppString.reviews,
+              // ),
             ]),
         Container(
           padding: EdgeInsets.symmetric(horizontal: 24.w),
           child: IndexedStack(
-            index: selectedIndex,
+            index: 0,
             children: <Widget>[
               Visibility(
                 maintainState: true,
                 visible: selectedIndex == 0,
                 child: const DescriptionDetails(),
               ),
-              Visibility(
-                  maintainState: true,
-                  visible: selectedIndex == 1,
-                  child: const ReviewsDetails()),
+              // Visibility(
+              //     maintainState: true,
+              //     visible: selectedIndex == 1,
+              //     child: const ReviewsDetails()),
             ],
           ),
         )

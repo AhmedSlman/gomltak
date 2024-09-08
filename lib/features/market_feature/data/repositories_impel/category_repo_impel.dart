@@ -20,7 +20,7 @@ class CategoryRepoImpel implements CategoryRepo {
     int? categoryId,
   }) async {
     try {
-      print('resposn.toString()');
+   //   print('resposn.toString()');
 
       final resposn = await apiServes
           .get(
@@ -29,7 +29,7 @@ class CategoryRepoImpel implements CategoryRepo {
         lang: CachHelper.getData('lang').toString(),
       )
           .catchError((error) {
-        print(error.toString());
+      //  print(error.toString());
       });
       print(resposn.toString());
 

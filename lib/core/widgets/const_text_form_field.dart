@@ -7,7 +7,7 @@ import '../utils/app_colors.dart';
 
 class ConstTextFormField extends StatelessWidget {
   const ConstTextFormField({
-    Key? key,
+    super.key,
     required this.hintText,
     this.validator,
     this.controller,
@@ -16,7 +16,7 @@ class ConstTextFormField extends StatelessWidget {
     this.obscureText = false,
     this.maxLines = 1,
     this.minLines = 1,
-  }) : super(key: key);
+  });
   final String hintText;
   final String? Function(String?)? validator;
   final TextEditingController? controller;

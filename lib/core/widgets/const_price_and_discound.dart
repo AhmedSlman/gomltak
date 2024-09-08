@@ -21,7 +21,7 @@ ConstrainedBox constPriceAndDiscound({
           ),
           textAlign: TextAlign.end,
         ),
-        5.w.pw,
+        2.w.pw,
         Text(
           originalPrice ?? '',
           style: context.textTheme.bodySmall!.copyWith(

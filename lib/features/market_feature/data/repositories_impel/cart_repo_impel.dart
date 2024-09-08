@@ -34,7 +34,7 @@ class CartRepoImpel implements CartRepo {
         token: CachHelper.getData('token').toString(),
         lang: CachHelper.getData('lang').toString(),
       );
-      print(resposn);
+//print(resposn);
       if (resposn['status'] == 1) {
         if (resposn['data'] == null) {
           return left(ServerFailure(resposn['message']));

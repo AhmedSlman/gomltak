@@ -2,7 +2,6 @@ import 'dart:async';
 
 import 'package:go_router/go_router.dart';
 import 'package:gomltak/core/cached/cash_helper.dart';
-import 'package:gomltak/core/utils/app_colors.dart';
 import 'package:gomltak/core/utils/app_route.dart';
 import 'package:gomltak/core/utils/extentions.dart';
 import 'package:flutter/material.dart';

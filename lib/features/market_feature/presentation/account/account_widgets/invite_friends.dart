@@ -5,7 +5,7 @@ import 'package:webview_flutter/webview_flutter.dart';
 class InviteFriends extends StatefulWidget {
   final String url;
 
-  const InviteFriends({Key? key, required this.url}) : super(key: key);
+  const InviteFriends({super.key, required this.url});
 
   @override
   State<InviteFriends> createState() => _InviteFriendsState();

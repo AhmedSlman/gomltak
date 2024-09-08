@@ -18,8 +18,8 @@ import 'cart_widgets/shimmer_cart.dart';
 
 class CartView extends StatelessWidget {
   const CartView({
-    Key? key,
-  }) : super(key: key);
+    super.key,
+  });
 
   @override
   Widget build(BuildContext context) {

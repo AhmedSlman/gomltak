@@ -17,7 +17,6 @@ import 'details_prodact_widgets/choose_color.dart';
 import 'details_prodact_widgets/counter_widget.dart';
 import 'details_prodact_widgets/details_image_widgets.dart';
 import 'details_prodact_widgets/dropdown_item_size.dart';
-import 'details_prodact_widgets/rating_stars.dart';
 import 'details_prodact_widgets/shimmer_image_details.dart';
 import 'details_prodact_widgets/tabbar_reviews_and_description.dart';
 
@@ -102,7 +101,7 @@ class DetailsView extends StatelessWidget {
                           ),
                           17.h.ph,
                           Container(
-                            height: 140.h,
+                            height: 130.h,
                             padding: EdgeInsets.symmetric(horizontal: 24.w),
                             child: Row(
                               mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -126,24 +125,27 @@ class DetailsView extends StatelessWidget {
                                             '${cubit.poducts.originalPrice}',
                                         sellingPrice:
                                             '${cubit.poducts.sellingPrice}'),
-                                    22.h.ph,
-                                    ratingStart(
-                                        context: context,
-                                        rate: cubit.poducts.avgRate?.toInt() ??
-                                            1),
+                                    16.h.ph,
+                                      ChooseColor(
+                                      hexaColor: cubit.poducts.colors,
+                                      onChanged: (selectColor) {
+                                        cubit.selectedColorId = selectColor!;
+                                      },
+                                    ),
+                                    // 22.h.ph,
+                                    // ratingStart(
+                                    //     context: context,
+                                    //     rate: cubit.poducts.avgRate?.toInt() ??
+                                    //         1),
+                                           // 22.h.ph,
                                     // const Spacer(),
                                   ],
                                 ),
                                 Column(
                                   crossAxisAlignment: CrossAxisAlignment.end,
                                   children: [
-                                    ChooseColor(
-                                      hexaColor: cubit.poducts.colors,
-                                      onChanged: (selectColor) {
-                                        cubit.selectedColorId = selectColor!;
-                                      },
-                                    ),
-                                    18.h.ph,
+                                  
+                                  //  16.h.ph,
                                     // const Spacer(),
                                     DropDownItemsSize(
                                         onChanged: (selectedSize) {
@@ -167,7 +169,7 @@ class DetailsView extends StatelessWidget {
                               ],
                             ),
                           ),
-                          10.h.ph,
+                          44.h.ph,
                           const TabBarReviewsAndDescription(),
                         ],
                       )

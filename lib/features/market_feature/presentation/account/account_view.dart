@@ -40,7 +40,7 @@ class AccountView extends StatelessWidget {
                           .copyWith(color: AppColors.kDarkSilver)),
                   32.h.ph,
                   CachHelper.getData('userName') != null
-                      ? bottomItemAccount(
+                      ? BottomItemAccount(
                           onTap: () {
                             context.push(AppRouterPath.editProfileView);
                           },
@@ -49,17 +49,17 @@ class AccountView extends StatelessWidget {
                           nameBottom: AppString.editProfile,
                         )
                       : const SizedBox(),
+                 // 16.h.ph,
+                  // bottomItemAccount(
+                  //   onTap: () {
+                  //     context.push(AppRouterPath.helpCenterView);
+                  //   },
+                  //   context: context,
+                  //   imageIcon: AppImages.helpCenter,
+                  //   nameBottom: AppString.helpCenter,
+                  // ),
                   16.h.ph,
-                  bottomItemAccount(
-                    onTap: () {
-                      context.push(AppRouterPath.helpCenterView);
-                    },
-                    context: context,
-                    imageIcon: AppImages.helpCenter,
-                    nameBottom: AppString.helpCenter,
-                  ),
-                  16.h.ph,
-                  bottomItemAccount(
+                  BottomItemAccount(
                     onTap: () {
                       context.push(AppRouterPath.inviteFriends,
                           extra: 'https://gomltak.com/');
@@ -69,7 +69,7 @@ class AccountView extends StatelessWidget {
                     nameBottom: AppString.inviteFriends,
                   ),
                   16.h.ph,
-                  bottomItemAccount(
+                  BottomItemAccount(
                     onTap: () {
                       context.push(AppRouterPath.privcePolicyView);
                     },
@@ -79,7 +79,7 @@ class AccountView extends StatelessWidget {
                   ),
                   16.h.ph,
                   CachHelper.getData('userName') != null
-                      ? bottomItemAccount(
+                      ? BottomItemAccount(
                           onTap: () {
                             if (CachHelper.getData('token') != null) {
                               Phoenix.rebirth(context);

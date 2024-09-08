@@ -6,10 +6,10 @@ import 'package:gomltak/features/market_feature/data/models/details_prodact_mode
 
 class ChooseColor extends StatefulWidget {
   const ChooseColor({
-    Key? key,
+    super.key,
     this.hexaColor,
     this.onChanged,
-  }) : super(key: key);
+  });
   final List<ColorPoducts>? hexaColor;
   final void Function(int?)? onChanged;
 

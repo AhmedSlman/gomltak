@@ -16,9 +16,9 @@ import 'cubit/category_cubit.dart';
 
 class SubCategoryView extends StatelessWidget {
   const SubCategoryView({
-    Key? key,
+    super.key,
     // required this.categoryName,
-  }) : super(key: key);
+  });
   // final String categoryName;
 
   @override

@@ -19,7 +19,7 @@ class PrivcePolicyView extends StatelessWidget {
           30.h.ph,
           ConstAppBar(
               body: '',
-              title: 'Help center',
+              title: 'Privce Policy',
               onPressed: () {
                 context.pop();
               }),
